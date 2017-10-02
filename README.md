@@ -1,3 +1,9 @@
+React Tpl
+=========
+
+[![CircleCI](https://circleci.com/bb/aeldar/react-tpl.svg?style=svg&circle-token=8759004722879fe47f3375b06b634bf59462361c)](https://circleci.com/bb/aeldar/react-tpl)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
