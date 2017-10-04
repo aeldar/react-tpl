@@ -1,8 +1,9 @@
 React Tpl
 =========
 
-[![CircleCI](https://circleci.com/bb/aeldar/react-tpl.svg?style=svg&circle-token=8759004722879fe47f3375b06b634bf59462361c)](https://circleci.com/bb/aeldar/react-tpl)
-
+[![Build Status](https://travis-ci.org/aeldar/react-tpl.svg?branch=master)](https://travis-ci.org/aeldar/react-tpl)
+[![Build status](https://ci.appveyor.com/api/projects/status/868g6c6or0i92wib?svg=true)](https://ci.appveyor.com/project/aeldar/react-tpl)
+[![Coverage Status](https://coveralls.io/repos/github/aeldar/react-tpl/badge.svg)](https://coveralls.io/github/aeldar/react-tpl)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
