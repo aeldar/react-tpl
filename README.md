@@ -1,6 +1,8 @@
 React Tpl
 =========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/aeldar/react-tpl.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/aeldar/react-tpl.svg?branch=master)](https://travis-ci.org/aeldar/react-tpl)
 [![Build status](https://ci.appveyor.com/api/projects/status/868g6c6or0i92wib?svg=true)](https://ci.appveyor.com/project/aeldar/react-tpl)
 [![Coverage Status](https://coveralls.io/repos/github/aeldar/react-tpl/badge.svg)](https://coveralls.io/github/aeldar/react-tpl)
