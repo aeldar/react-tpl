@@ -13,5 +13,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Additions
 ---------
 
-* ESLint
-* Flow
+* [ESLint](https://eslint.org/)
+* [Flow](https://flow.org/en/docs/react/)
+* [Styleguidist](https://react-styleguidist.js.org/)
