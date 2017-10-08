@@ -5638,9 +5638,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-codemirror2@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-2.0.0.tgz#25eceff9725a2ab9e47f78fe9a23cb3923d1766e"
+react-codemirror2@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-2.0.2.tgz#68b2ae8923174a2b3d8b6fe905d0fd3c91d97d97"
 
 react-dev-utils@^3.0.2:
   version "3.1.1"
@@ -5739,7 +5739,7 @@ react-icon-base@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-icon-base/-/react-icon-base-2.1.0.tgz#a196e33fdf1e7aaa1fda3aefbb68bdad9e82a79d"
 
-react-icons@^2.2.5:
+react-icons@^2.2.7:
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.7.tgz#d7860826b258557510dac10680abea5ca23cf650"
   dependencies:
@@ -5787,9 +5787,9 @@ react-scripts@1.0.14:
   optionalDependencies:
     fsevents "1.1.2"
 
-react-styleguidist@^6.0.27:
-  version "6.0.27"
-  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-6.0.27.tgz#6200ff44652a2fee10d7bca23db7825b34b592c0"
+react-styleguidist@^6.0.28:
+  version "6.0.28"
+  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-6.0.28.tgz#e105acc1149a5cb2656d20467a36ca4a5baff264"
   dependencies:
     ast-types "^0.9.13"
     buble "^0.15.2"
@@ -5830,12 +5830,12 @@ react-styleguidist@^6.0.27:
     minimist "^1.2.0"
     prop-types "^15.5.10"
     q-i "^1.1.4"
-    react-codemirror2 "2.0.0"
+    react-codemirror2 "^2.0.2"
     react-dev-utils "^3.0.2"
     react-docgen "^3.0.0-beta7"
     react-docgen-displayname-handler "^1.0.1"
     react-group "^1.0.5"
-    react-icons "^2.2.5"
+    react-icons "^2.2.7"
     remark "^8.0.0"
     semver-utils "^1.1.1"
     style-loader "^0.18.2"
