@@ -20,5 +20,12 @@
     "flow-bin": "0.56.0",
     "react-scripts": "1.0.14",
     "react-styleguidist": "^6.0.28"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.{story,stories}.{js,jsx}",
+      "!src/{index,registerServiceWorker,setupTests}.{js,jsx}"
+    ]
   }
 }
