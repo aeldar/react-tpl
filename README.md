@@ -13,6 +13,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Additions
 ---------
 
-* [ESLint](https://eslint.org/)
-* [Flow](https://flow.org/en/docs/react/)
-* [Styleguidist](https://react-styleguidist.js.org/)
+* [x] [ESLint](https://eslint.org/)
+* [x] [Flow](https://flow.org/en/docs/react/)
+* [x] [Styleguidist](https://react-styleguidist.js.org/)
+* [ ] Storybook
+* [ ] Storybook Jest Snapshot testing
+* [ ] HMR (Hot Module Reload)
+* [ ] RHL (React Hot Reload)
+* [ ] 12 Factor App environment variables injected at runtime (not at build time)
+* [ ] CSS Modules
+* [ ] CSS preprocessor (SASS or Stylus or CSSNext)
+* [ ] Example code
+* [ ] Redux, because there is nothing better than that
+* [ ] GraphQL client
+* [ ] Material UI
+* [ ] Normalize.css
