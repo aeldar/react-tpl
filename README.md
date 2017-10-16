@@ -18,14 +18,17 @@ Additions
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
 * [ ] Storybook
 * [ ] Storybook Jest Snapshot testing
-* [ ] HMR (Hot Module Reload)
+* [x] HMR (Hot Module Reload)
 * [ ] RHL (React Hot Reload)
 * [ ] 12 Factor App environment variables injected at runtime (not at build time)
 * [ ] CSS Modules
 * [ ] CSS preprocessor (SASS or Stylus or CSSNext)
 * [ ] Example code
+  * [x] Statefull component example
+  * [x] Stateless component example
+  * [ ] MaterialUI example
 * [ ] Redux, because there is nothing better than that
 * [ ] GraphQL client
-* [ ] Material UI
-* [ ] Normalize.css
-
+* [x] Material UI
+* [x] Normalize.css
+* [ ] Move to TypeScript (Flow support in WebStorm is still very poor)

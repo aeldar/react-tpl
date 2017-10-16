@@ -1,11 +1,14 @@
-import * as React from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'normalize.css';
+
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+const rootEl = document.getElementById('root');
 const renderApp = (Component) => {
-  render(<Component />, document.getElementById('root'));
+  ReactDOM.render(<Component />, rootEl);
 };
 
 renderApp(App);
