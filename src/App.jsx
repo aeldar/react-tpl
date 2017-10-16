@@ -1,9 +1,9 @@
 // @flow
-
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Counter from './_examples/components/Counter/Counter';
 import Greeter from './_examples/components/Greeter';
 
 type Props = {}
@@ -20,6 +20,7 @@ class App extends Component<Props> {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Greeter greeting={'Hello'} />
+        <Counter />
       </div>
     );
   }
