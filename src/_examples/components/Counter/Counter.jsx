@@ -7,7 +7,7 @@ type State = {
   secondsSinceReload: number,
 }
 
-export class Counter extends React.Component<void, State> {
+export class Counter extends React.Component<{}, State> {
 
   interval: number;
 

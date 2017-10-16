@@ -5,6 +5,7 @@ import './App.css';
 
 import Counter from './_examples/components/Counter/Counter';
 import Greeter from './_examples/components/Greeter';
+import ServEnvVarExample from './_examples/components/ServEnvVarExample/ServEnvVarExample';
 
 type Props = {}
 
@@ -21,6 +22,7 @@ class App extends Component<Props> {
         </p>
         <Greeter greeting={'Hello'} />
         <Counter />
+        <ServEnvVarExample />
       </div>
     );
   }
