@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 
-import './Greeter.css';
+import styles from './Greeter.css';
 
 type Mood = 'Fast'|'Furious'
 
@@ -13,7 +13,7 @@ type Props = {
 }
 
 const Greeter = ({ greeting = 'Hello', name = 'World' }: Props): React.Node => (
-  <div className="greeter">{greeting}, {name}!</div>
+  <div className={styles.container}>{greeting}, {name}!</div>
 );
 
 export default Greeter;

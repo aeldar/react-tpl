@@ -1,14 +1,14 @@
 //@flow
 import React from 'react';
 
-import './ServEnvVarExample.css';
+import styles from './ServEnvVarExample.css';
 
 export const ServEnvVarExample = () => (
-  <p className="ServEnvVarExample">
+  <p className={styles.container}>
     {window.env && window.env.REACT_APP_GREETING
-      ? <span className="ServEnvVarExample__greeting">{window.env.REACT_APP_GREETING}</span>
+      ? <span className={styles.greeting}>{window.env.REACT_APP_GREETING}</span>
       : (
-        <span className="ServEnvVarExample__stub">
+        <span className={styles.stub}>
             Please set <code>REACT_APP_GREETING</code> environment variable on your
             app server.
           </span>

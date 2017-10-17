@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import './Counter.css';
+import styles from './Counter.css';
 
 type State = {
   secondsSinceReload: number,
@@ -29,7 +29,7 @@ export class Counter extends React.Component<{}, State> {
 
   render() {
     return (
-      <p className="Counter">
+      <p className={styles.container}>
         <strong>{this.state.secondsSinceReload}</strong> seconds since the last cold reload.
       </p>
     )

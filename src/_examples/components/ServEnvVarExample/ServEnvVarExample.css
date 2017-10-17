@@ -1,18 +1,18 @@
-.ServEnvVarExample {
+.container {
   font-size: large;
 }
 
-.ServEnvVarExample__greeting {
+.greeting {
   padding: .3em 1em;
   background-color: lightblue;
 }
 
-.ServEnvVarExample__stub {
+.stub {
   padding: .3em 1em;
   background-color: black;
   color: white;
 }
 
-.ServEnvVarExample__stub > code {
+.stub > code {
   color: lightblue;
 }

@@ -22,6 +22,9 @@ Additions
 * [ ] RHL (React Hot Reload)
 * [ ] 12 Factor App environment variables injected at runtime (not at build time)
 * [ ] CSS Modules
+  * [ ] add exclusions paths for everything outside src, and for src/styles
+  * [ ] add minification
+  * [ ] remove source maps
 * [ ] CSS preprocessor (SASS or Stylus or CSSNext)
 * [ ] Example code
   * [x] Statefull component example
