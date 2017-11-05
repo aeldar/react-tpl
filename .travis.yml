@@ -7,17 +7,17 @@ node_js:
   - "6"
 
 before_install:
-  - npm install -g npm # update to the lates npm to enable lock file usage
-  - npm install -g greenkeeper-lockfile@1
-  - npm install -g coveralls
+  # - npm install -g npm # update to the latest npm to enable lock file usage
+  - yarn global add greenkeeper-lockfile@1
+  - yarn global add coveralls
 before_script: greenkeeper-lockfile-update
 
 cache:
   directories:
     - node_modules
 script:
-  - npm test -- --coverage
-  - npm run build
+  - yarn test --coverage
+  - yarn build
 
 # Only the node version 8 job will upload the lockfile
 after_script: greenkeeper-lockfile-upload

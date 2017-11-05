@@ -16,15 +16,15 @@ cache:
 
 install:
   - ps: Install-Product node $env:nodejs_version x64
-  - npm install
+  - yarn install
 
 # no appveyor build step for js project
 build: off
 
 test_script:
   - node --version
-  - npm --version
-  - npm test
+  - yarn --version
+  - yarn test
 
 after_test:
-  - npm run build
+  - yarn build
