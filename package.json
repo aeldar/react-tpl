@@ -2,12 +2,7 @@
   "name": "react-tpl",
   "version": "1.0.14-1",
   "private": true,
-  "dependencies": {
-    "material-ui": "^1.0.0-beta.20",
-    "normalize.css": "^7.0.0",
-    "react": "16.0.0",
-    "react-dom": "16.0.0"
-  },
+  "license": "MIT",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -17,6 +12,12 @@
     "lint": "eslint src/",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
+  },
+  "dependencies": {
+    "material-ui": "^1.0.0-beta.20",
+    "normalize.css": "^7.0.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
   },
   "devDependencies": {
     "flow-bin": "0.58.0",

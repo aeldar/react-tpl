@@ -18,20 +18,24 @@ Additions
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
 * [ ] Storybook
 * [ ] Storybook Jest Snapshot testing
-* [x] HMR (Hot Module Reload)
-* [ ] RHL (React Hot Reload)
+* [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
+* [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
 * [ ] 12 Factor App environment variables injected at runtime (not at build time)
 * [ ] CSS Modules
+  * [x] patch webpack config
   * [ ] add exclusions paths for everything outside src, and for src/styles
   * [ ] add minification
   * [ ] remove source maps
-* [ ] CSS preprocessor (SASS or Stylus or CSSNext)
+* [ ] CSS preprocessor (CSSNext)
 * [ ] Example code
   * [x] Statefull component example
   * [x] Stateless component example
-  * [ ] MaterialUI example
+  * [x] MaterialUI example
+  * [ ] MaterialUI with theme
+  * [ ] Redux
+  * [ ] GraphQL
 * [ ] Redux, because there is nothing better than that
 * [ ] GraphQL client
 * [x] Material UI
 * [x] Normalize.css
-* [ ] Move to TypeScript (Flow support in WebStorm is still very poor)
+* [ ] ~~Move to TypeScript~~ (Flow support in WebStorm is still very poor)

@@ -1,3 +1,7 @@
+@import './variables.css';
+
+@import 'normalize.css';
+
 html {
   box-sizing: border-box;
 }

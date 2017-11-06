@@ -1,8 +1,11 @@
 // @flow
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 import logo from './logo.svg';
 import styles from './App.css';
+
+import theme from './theme';
 
 import Counter from './_examples/components/Counter/Counter';
 import Greeter from './_examples/components/Greeter/Greeter';
@@ -30,7 +33,7 @@ class App extends Component<Props> {
 
   render() {
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider theme={theme}>
         <div className={styles.container}>
           {this.renderHeader()}
           {this.renderIntro()}
