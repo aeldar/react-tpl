@@ -5,7 +5,7 @@ import AccessAlarmIcon from 'material-ui-icons/AccessAlarm';
 
 const MaterialHello = () => (
   <div>
-    <TextField label='Say hello' margin='normal' />
+    <TextField label="Say hello" margin="normal" />
     <br />
     Font icon
     <Icon color="primary">add_circle</Icon>
