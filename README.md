@@ -14,7 +14,7 @@ Additions
 ---------
 
 * [x] [ESLint](https://eslint.org/)
-* [x] [Flow](https://flow.org/en/docs/react/)
+* [ ] ~~[Flow](https://flow.org/en/docs/react/)~~
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
 * [ ] Storybook
 * [ ] Storybook Jest Snapshot testing
@@ -38,4 +38,4 @@ Additions
 * [ ] GraphQL client
 * [x] Material UI
 * [x] Normalize.css
-* [ ] ~~Move to TypeScript~~ (Flow support in WebStorm is still very poor)
+* [ ] Move to TypeScript (Flow support in WebStorm is still very poor)
