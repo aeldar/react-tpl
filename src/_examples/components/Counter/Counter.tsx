@@ -2,8 +2,8 @@ import React from 'react';
 
 import styles from './Counter.css';
 
-type State = {
-  secondsSinceReload: number,
+interface State {
+  secondsSinceReload: number;
 }
 
 export class Counter extends React.Component<{}, State> {
@@ -15,7 +15,7 @@ export class Counter extends React.Component<{}, State> {
   };
 
   componentDidMount() {
-    this.interval = setInterval(this.updateTimer, 1000);
+    this.interval = setInterval(this.updateTimer, 1000) as any;
   }
 
   componentWillUnmount() {
@@ -24,14 +24,14 @@ export class Counter extends React.Component<{}, State> {
 
   updateTimer = () => {
     this.setState(({ secondsSinceReload }) => ({ secondsSinceReload: secondsSinceReload + 1}));
-  };
+  }
 
   render() {
     return (
       <p className={styles.container}>
         <strong>{this.state.secondsSinceReload}</strong> seconds since the last cold reload.
       </p>
-    )
+    );
   }
 }
 

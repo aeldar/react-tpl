@@ -12,16 +12,14 @@ import Greeter from './_examples/components/Greeter/Greeter';
 import ServEnvVarExample from './_examples/components/ServEnvVarExample/ServEnvVarExample';
 import MaterialHello from './_examples/components/MaterialHello/MaterialHello';
 
-type Props = {}
-
-class App extends Component<Props> {
+class App extends Component {
 
   renderHeader = () => (
     <header className={styles.header}>
       <img src={logo} className={styles.logo} alt="logo" />
       <h1 className={styles.title}>Welcome to React</h1>
     </header>
-  );
+  )
 
   renderIntro() {
     return (

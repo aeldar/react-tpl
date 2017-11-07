@@ -13,8 +13,8 @@ const renderApp = (Component) => {
 renderApp(App);
 
 if (process.env.NODE_ENV !== 'production') {
-  if (module.hot) {
-    module.hot.accept(App, () => renderApp(App));
+  if ((module as any).hot) {
+    (module as any).hot.accept(App, () => renderApp(App));
   }
 }
 

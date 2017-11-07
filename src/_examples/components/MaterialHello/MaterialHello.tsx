@@ -3,8 +3,7 @@ import TextField from 'material-ui/TextField';
 import Icon from 'material-ui/Icon';
 import AccessAlarmIcon from 'material-ui-icons/AccessAlarm';
 
-
-const MaterialHello = (): React.Node => (
+const MaterialHello = () => (
   <div>
     <TextField label='Say hello' margin='normal' />
     <br />
