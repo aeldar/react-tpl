@@ -5,14 +5,13 @@
  * @returns {*}
  */
 
+const { compose } = require('react-app-rewired');
 const rewireCSSModules = require('./config/rewire-css-modules');
-const {inspect} = require('util');
+const rewireTypescript = require('./config/rewire-typescript');
+// const {inspect} = require('util');
 
 
-module.exports = function override(config, env) {
-  //do stuff with the webpack config...
-
-  config = rewireCSSModules(config, env);
-
-  return config;
-};
+module.exports = compose(
+  rewireCSSModules,
+  rewireTypescript,
+);
