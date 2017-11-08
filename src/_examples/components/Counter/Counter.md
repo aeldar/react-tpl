@@ -1,0 +1,5 @@
+Simple example:
+
+```jsx
+<Counter />
+```

@@ -6046,6 +6046,10 @@ react-docgen-displayname-handler@^1.0.1:
   dependencies:
     recast "0.12.6"
 
+react-docgen-typescript@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.0.2.tgz#be2f96d751cbf53ab0802e1b943938f346eb3494"
+
 react-docgen@^3.0.0-beta8:
   version "3.0.0-beta8"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-3.0.0-beta8.tgz#57888166cffd0681fa20fa0d73e569fa7fd04c3c"

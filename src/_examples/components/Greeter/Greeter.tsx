@@ -11,7 +11,7 @@ interface Props {
   mood?: Mood;
 }
 
-const Greeter = ({ greeting = 'Hello', name = 'World' }: Props): JSX.Element => (
+export const Greeter = ({ greeting = 'Hello', name = 'World' }: Props): JSX.Element => (
   <div className={styles.container}>{greeting}, {name}!</div>
 );
 
