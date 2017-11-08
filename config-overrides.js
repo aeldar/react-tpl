@@ -13,5 +13,5 @@ const rewireTypescript = require('./config/rewire-typescript');
 
 module.exports = compose(
   rewireCSSModules,
-  rewireTypescript,
+  rewireTypescript
 );
