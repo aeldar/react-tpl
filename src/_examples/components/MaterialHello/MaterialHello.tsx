@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import TextField from 'material-ui/TextField';
 import Icon from 'material-ui/Icon';
 import AccessAlarmIcon from 'material-ui-icons/AccessAlarm';

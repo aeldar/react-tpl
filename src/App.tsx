@@ -1,4 +1,3 @@
-// @flow
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -24,7 +23,7 @@ class App extends Component {
   renderIntro() {
     return (
       <p className={styles.intro}>
-        To get started, edit <code>src/App.js</code> and save to reload.123
+        To get started, edit <code>src/App.tsx</code> and save to reload.
       </p>
     );
   }
