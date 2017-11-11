@@ -9,6 +9,9 @@
 # production
 /build
 
+# docs
+/styleguide
+
 # misc
 /.idea
 /.vscode

@@ -4,15 +4,15 @@ import TextField from 'material-ui/TextField';
 import Icon from 'material-ui/Icon';
 import AccessAlarmIcon from 'material-ui-icons/AccessAlarm';
 
-export const MaterialHello = () => (
+export const MaterialHello: React.SFC = () => (
   <div>
-    <TextField label="Say hello" margin="normal" />
-    <br />
+    <TextField label="Say hello" margin="normal"/>
+    <br/>
     Font icon
     <Icon color="primary">add_circle</Icon>
-    <br />
+    <br/>
     Svg icon
-    <AccessAlarmIcon color="primary" />
+    <AccessAlarmIcon color="primary"/>
   </div>
 );
 

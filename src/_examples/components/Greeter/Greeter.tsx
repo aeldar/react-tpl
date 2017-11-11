@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { pure } from 'recompose';
 
 import styles from './Greeter.css';
 
@@ -11,8 +12,8 @@ interface Props {
   mood?: Mood;
 }
 
-export const Greeter = ({ greeting = 'Hello', name = 'World' }: Props): JSX.Element => (
+export const Greeter: React.SFC<Props> = ({ greeting = 'Hello', name = 'World' }) => (
   <div className={styles.container}>{greeting}, {name}!</div>
 );
 
-export default Greeter;
+export default pure(Greeter);

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import styles from './ServEnvVarExample.css';
 
-export const ServEnvVarExample = () => (
+export const ServEnvVarExample: React.SFC = () => (
   <p className={styles.container}>
     {window.env && window.env.REACT_APP_GREETING
       ? <span className={styles.greeting}>{window.env.REACT_APP_GREETING}</span>
