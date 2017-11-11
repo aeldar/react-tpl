@@ -14,7 +14,9 @@ Additions
 ---------
 
 * [x] [ESLint](https://eslint.org/)
+  * [ ] set up damn cruel rules
 * [ ] ~~[Flow](https://flow.org/en/docs/react/)~~
+* [x] [TypeScript](https://www.typescriptlang.org/) (because Flow support in WebStorm is still very shitty. Also flow is damn slow.)
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
   * [ ] [Snapguidist](https://github.com/styleguidist/snapguidist) - Styleguidist snapshot testing
 * [ ] ~~Storybook~~
@@ -39,7 +41,6 @@ Additions
 * [ ] GraphQL client
 * [x] [Material UI v1](https://material-ui-next.com/)
 * [x] [Normalize.css](https://necolas.github.io/normalize.css/)
-* [x] TypeScript (Flow support in WebStorm is still very shitty. Also flow is damn slow.)
 * [x] Babel plugins
   * [x] [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
 * [ ] Other dependencies
