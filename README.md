@@ -16,12 +16,13 @@ Additions
 * [x] [ESLint](https://eslint.org/)
 * [ ] ~~[Flow](https://flow.org/en/docs/react/)~~
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
-* [ ] Storybook
-* [ ] Storybook Jest Snapshot testing
+  * [ ] [Snapguidist](https://github.com/styleguidist/snapguidist) - Styleguidist snapshot testing
+* [ ] ~~Storybook~~
+* [ ] ~~Storybook Jest Snapshot testing~~
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
 * [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
-* [ ] 12 Factor App environment variables injected at runtime (not at build time)
-* [ ] CSS Modules
+* [ ] Runtime environment variables (as opposed to build time env vars through `process.env`)
+* [ ] [CSS Modules](https://github.com/css-modules/css-modules)
   * [x] patch webpack config
   * [ ] add exclusions paths for everything outside src, and for src/styles
   * [ ] add minification
@@ -36,6 +37,8 @@ Additions
   * [ ] GraphQL
 * [ ] Redux, because there is nothing better than that
 * [ ] GraphQL client
-* [x] Material UI
-* [x] Normalize.css
-* [ ] Move to TypeScript (Flow support in WebStorm is still very poor)
+* [x] [Material UI v1](https://material-ui-next.com/)
+* [x] [Normalize.css](https://necolas.github.io/normalize.css/)
+* [x] TypeScript (Flow support in WebStorm is still very shitty. Also flow is damn slow.)
+* [x] Babel plugins
+  * [x] [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
