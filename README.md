@@ -42,3 +42,6 @@ Additions
 * [x] TypeScript (Flow support in WebStorm is still very shitty. Also flow is damn slow.)
 * [x] Babel plugins
   * [x] [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
+* [ ] Other dependencies
+  * [x] [recompose](https://github.com/acdlite/recompose) - A React utility belt for function components and higher-order components.
+  * [x] [classnames](https://github.com/JedWatson/classnames) - A simple javascript utility for conditionally joining classNames together.
