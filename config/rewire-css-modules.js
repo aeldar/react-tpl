@@ -18,12 +18,10 @@ const cssLoaderMatcher = function(rule) {
 
 module.exports = function override(config, env) {
   let l = getLoader(config.module.rules, cssLoaderMatcher);
-  l.options = {
+  l.options = Object.assign({}, l.options, {
     modules: true,
-    importLoaders: 1,
     localIdentName: 'production' === env ? '__[hash:base64:8]' : '[name]__[local]___[hash:base64:5]',
-    sourceMap: 'development' === env,
-  };
+  });
 
   return config;
 };
