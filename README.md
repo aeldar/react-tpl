@@ -14,7 +14,7 @@ Additions
 ---------
 
 * [ ] ~~[ESLint](https://eslint.org/)~~ TSLint
-  * [ ] set up damn cruel rules
+  * [ ] set up cruel rules
 * [ ] ~~[Flow](https://flow.org/en/docs/react/)~~ (damn slow; shitty IDE support)
 * [x] [TypeScript](https://www.typescriptlang.org/)
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
@@ -25,10 +25,7 @@ Additions
 * [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
 * [ ] Runtime environment variables (as opposed to build time env vars through `process.env`)
 * [ ] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
-  * [x] patch webpack config
-  * [ ] add exclusions paths for everything outside src, and for src/styles
-  * [x] add minification
-* [ ] add source maps for CSS development
+* [ ] add source maps for CSS development (fix it for css modules)
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))
 * [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
 * [ ] Example code
