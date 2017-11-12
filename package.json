@@ -8,9 +8,10 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint src/",
+    "lint": "tslint src/",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "analyze": "npx source-map-explorer build/static/js/main.*"
   },
   "dependencies": {
     "classnames": "2.2.5",
@@ -28,7 +29,7 @@
     "@types/react": "16.0.22",
     "@types/react-dom": "16.0.3",
     "@types/recompose": "0.24.2",
-    "babel-plugin-lodash": "3.3.0",
+    "babel-plugin-lodash": "3.2.11",
     "fork-ts-checker-webpack-plugin": "0.2.8",
     "postcss-cssnext": "3.0.2",
     "postcss-import": "11.0.0",
