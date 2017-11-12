@@ -15,10 +15,10 @@ Additions
 
 * [x] [ESLint](https://eslint.org/)
   * [ ] set up damn cruel rules
-* [ ] ~~[Flow](https://flow.org/en/docs/react/)~~
-* [x] [TypeScript](https://www.typescriptlang.org/) (because Flow support in WebStorm is still very shitty. Also flow is damn slow.)
+* [ ] ~~[Flow](https://flow.org/en/docs/react/)~~ (damn slow; shitty IDE support)
+* [x] [TypeScript](https://www.typescriptlang.org/)
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
-  * [ ] [Snapguidist](https://github.com/styleguidist/snapguidist) - Styleguidist snapshot testing
+  * [ ] ~~[Snapguidist](https://github.com/styleguidist/snapguidist) - Styleguidist snapshot testing~~ (no [CI testing yet](https://github.com/styleguidist/snapguidist/issues/16))
 * [ ] ~~Storybook~~
 * [ ] ~~Storybook Jest Snapshot testing~~
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
