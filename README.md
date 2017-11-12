@@ -29,7 +29,7 @@ Additions
   * [ ] add exclusions paths for everything outside src, and for src/styles
   * [x] add minification
 * [ ] add source maps for CSS development
-* [x] CSS preprocessor (CSSNext)
+* [x] ~~[CSSNext](http://cssnext.io/)~~ (look feature branch)
 * [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
 * [ ] Example code
   * [x] Statefull component example
