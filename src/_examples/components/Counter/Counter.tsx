@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './Counter.css';
+import styles from './Counter.module.css';
 
 interface State {
   secondsSinceReload: number;

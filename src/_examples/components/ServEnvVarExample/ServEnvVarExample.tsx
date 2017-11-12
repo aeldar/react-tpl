@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './ServEnvVarExample.css';
+import styles from './ServEnvVarExample.module.css';
 
 export const ServEnvVarExample: React.SFC = () => (
   <p className={styles.container}>

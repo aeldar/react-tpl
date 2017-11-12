@@ -24,7 +24,7 @@ Additions
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
 * [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
 * [ ] Runtime environment variables (as opposed to build time env vars through `process.env`)
-* [ ] [CSS Modules](https://github.com/css-modules/css-modules)
+* [ ] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
   * [x] patch webpack config
   * [ ] add exclusions paths for everything outside src, and for src/styles
   * [x] add minification

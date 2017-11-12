@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import logo from './logo.svg';
-import styles from './App.css';
+import styles from './App.module.css';
 
 import theme from './theme';
 
