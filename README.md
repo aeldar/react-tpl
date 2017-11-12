@@ -27,9 +27,10 @@ Additions
 * [ ] [CSS Modules](https://github.com/css-modules/css-modules)
   * [x] patch webpack config
   * [ ] add exclusions paths for everything outside src, and for src/styles
-  * [ ] add minification
-  * [ ] remove source maps
-* [ ] CSS preprocessor (CSSNext)
+  * [x] add minification
+* [ ] add source maps for CSS development
+* [x] CSS preprocessor (CSSNext)
+* [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
 * [ ] Example code
   * [x] Statefull component example
   * [x] Stateless component example
