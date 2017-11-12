@@ -1,11 +1,6 @@
-@import "../../../variables.css"; // we need to import variables in any file that depends on them, because of cssnext, which converts them to values for older browsers.
-
 .container {
   border: 1px solid lightblue;
   border-radius: 3px;
   display: inline-block;
   background-color: var(--my-var);
-  & .hello {
-    color: red;
-  }
 }

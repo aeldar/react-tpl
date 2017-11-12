@@ -1,5 +1,4 @@
 // const { getLoader } = require('react-app-rewired');
-const { inspect } = require('util');
 
 // custom getLoader instead of react-ap-rewired's one, to implement proper loader search inside
 // ExtractTextPlugin.extract() plugin.
@@ -27,7 +26,6 @@ module.exports = function override(config, env) {
 
   matchers.forEach(matcher => {
     const loader = getLoader(config.module.rules, matcher);
-    console.log(matcher.name);
     loader.options = Object.assign({}, loader.options, {
       sourceMap: shouldUseSourceMap,
     })

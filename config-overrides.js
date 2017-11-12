@@ -17,10 +17,10 @@ const debugRules = require('./config/rewire-debug-print-rules');
 module.exports = compose(
   // debugRules, // print rules and kill
 
-  // rewireCssSourcemaps, // should run after all css related rewiring!
+  rewireCssSourcemaps, // should run after all css related rewiring!
   rewireCSSModules,
-  rewirePostcss,
+  // rewirePostcss,
   rewireTypescript,
   rewireBabel,
-  // convertStringLoadersToObjects
+  convertStringLoadersToObjects
 );
