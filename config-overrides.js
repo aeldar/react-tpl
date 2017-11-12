@@ -11,6 +11,7 @@ const rewireTypescript = require('./tools/rewire-scripts/rewire-typescript');
 const rewireBabel = require('./tools/rewire-scripts/rewire-babel');
 const rewireCssSourcemaps = require('./tools/rewire-scripts/rewire-css-sourcemaps');
 const convertStringLoadersToObjects = require('./tools/rewire-scripts/rewire-convert-string-loaders-to-objects');
+const rewirePostcss = require('./tools/rewire-postcss');
 // const debugRules = require('./tools/rewire-scripts/rewire-debug-print-rules');
 
 module.exports = compose(
@@ -18,6 +19,7 @@ module.exports = compose(
 
   rewireCssSourcemaps, // should run after all css related rewiring!
   rewireCSSModules,
+  rewirePostcss,
   rewireTypescript,
   rewireBabel,
   convertStringLoadersToObjects // should run before all, because some rewire scripts expect loaders in object format
