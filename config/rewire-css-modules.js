@@ -1,5 +1,3 @@
-const {inspect} = require('util');
-
 const getLoader = function(rules, matcher) {
   let loader;
 

@@ -20,7 +20,10 @@ const ruleListPatcher = (rules) => {
     if (typeof rule === 'string') {
       arr[ind] = { loader: rule };
     }
-    if (rule.use) {
+    if (rule.use && typeof rule.use === 'string') {
+      rule.use = [{ loader: rule.use }]
+    }
+    if (rule.use && Array.isArray(rule.use)) {
       ruleListPatcher(rule.use);
     }
     if (rule.oneOf) {
