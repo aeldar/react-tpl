@@ -15,23 +15,26 @@ const getLoader = function(rules, matcher) {
   return loader;
 };
 
-const postcssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`postcss-loader`) !== -1;
+const ruleListPatcher = (rules) => {
+  rules.forEach((rule, ind, arr) => {
+    if (typeof rule === 'string') {
+      arr[ind] = { loader: rule };
+    }
+    if (rule.use) {
+      ruleListPatcher(rule.use);
+    }
+    if (rule.oneOf) {
+      ruleListPatcher(rule.oneOf);
+    }
+    if(Array.isArray(rule.loader)) {
+      ruleListPatcher(rule.loader);
+    }
+  })
+};
 
 module.exports = function override(config, env) {
 
-  const loader = getLoader(config.module.rules, postcssLoaderMatcher);
-  const oldPlugins = loader.options.plugins;
-  loader.options = Object.assign({}, loader.options, {
-    plugins: () => ([
-      require('postcss-import'), // we need this as neither cssnext understands imports, nor webpack helps it
-      require('postcss-cssnext')({
-        features: {
-          autoprefixer: false, // no need, as autoprefixer is used by postcss itself
-        }
-      }),
-      ...oldPlugins(),
-    ]),
-  });
+  ruleListPatcher(config.module.rules);
 
   return config;
 };

@@ -1,4 +1,5 @@
 // const { getLoader } = require('react-app-rewired');
+const { inspect } = require('util');
 
 // custom getLoader instead of react-ap-rewired's one, to implement proper loader search inside
 // ExtractTextPlugin.extract() plugin.
@@ -16,21 +17,20 @@ const getLoader = function(rules, matcher) {
 };
 
 const postcssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`postcss-loader`) !== -1;
+const cssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`css-loader`) !== -1;
+const styleLoaderMatcher = rule => rule.loader && typeof rule.loader === 'string' && rule.loader.indexOf(`style-loader`) !== -1;
+const matchers = [postcssLoaderMatcher, cssLoaderMatcher, styleLoaderMatcher];
 
 module.exports = function override(config, env) {
+  const shouldUseSourceMap =
+    'development' === env || ('production' === env && process.env.GENERATE_SOURCEMAP !== 'false');
 
-  const loader = getLoader(config.module.rules, postcssLoaderMatcher);
-  const oldPlugins = loader.options.plugins;
-  loader.options = Object.assign({}, loader.options, {
-    plugins: () => ([
-      require('postcss-import'), // we need this as neither cssnext understands imports, nor webpack helps it
-      require('postcss-cssnext')({
-        features: {
-          autoprefixer: false, // no need, as autoprefixer is used by postcss itself
-        }
-      }),
-      ...oldPlugins(),
-    ]),
+  matchers.forEach(matcher => {
+    const loader = getLoader(config.module.rules, matcher);
+    console.log(matcher.name);
+    loader.options = Object.assign({}, loader.options, {
+      sourceMap: shouldUseSourceMap,
+    })
   });
 
   return config;

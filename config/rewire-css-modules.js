@@ -12,9 +12,7 @@ const getLoader = function(rules, matcher) {
   return loader;
 };
 
-const cssLoaderMatcher = function(rule) {
-  return rule.loader && rule.loader.indexOf(`css-loader`) != -1;
-};
+const cssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`css-loader`) !== -1;
 
 module.exports = function override(config, env) {
   let l = getLoader(config.module.rules, cssLoaderMatcher);
