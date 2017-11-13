@@ -1,35 +1,34 @@
-// const { getLoader } = require('react-app-rewired');
+const path = require('path');
 
-// custom getLoader instead of react-ap-rewired's one, to implement proper loader search inside
-// ExtractTextPlugin.extract() plugin.
-// (Array.isArray(rule.loader) && rule.loader) added for this purpose.
-const getLoader = function(rules, matcher) {
-  let loader;
+const ruleChildren = rule =>
+  rule.use || rule.oneOf || (Array.isArray(rule.loader) && rule.loader) || [];
 
-  rules.some(rule => {
-    return loader = matcher(rule)
-      ? rule
-      : getLoader(rule.use || rule.oneOf || (Array.isArray(rule.loader) && rule.loader) || [], matcher);
-  });
+/**
+ * Given a rule, return if it uses a specific loader.
+ */
+const createLoaderMatcher = loader => rule =>
+  rule.loader && rule.loader.indexOf(`${path.sep}${loader}${path.sep}`) !== -1;
 
-  return loader;
-};
+const postcssLoaderMatcher = createLoaderMatcher('postcss-loader');
+const cssLoaderMatcher = createLoaderMatcher('css-loader');
+const styleLoaderMatcher = createLoaderMatcher('style-loader');
 
-const postcssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`postcss-loader`) !== -1;
-const cssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`css-loader`) !== -1;
-const styleLoaderMatcher = rule => rule.loader && typeof rule.loader === 'string' && rule.loader.indexOf(`style-loader`) !== -1;
 const matchers = [postcssLoaderMatcher, cssLoaderMatcher, styleLoaderMatcher];
+const check = rule => matchers.some(matcher => matcher(rule));
+
+const gatherLoaders = rules =>
+  rules.reduce((acc, curr) => (
+    check(curr) ? [...acc, curr] : [...acc, ...gatherLoaders(ruleChildren(curr))]
+  ), []);
 
 module.exports = function override(config, env) {
-  const shouldUseSourceMap =
-    'development' === env || ('production' === env && process.env.GENERATE_SOURCEMAP !== 'false');
+  const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 
-  matchers.forEach(matcher => {
-    const loader = getLoader(config.module.rules, matcher);
+  gatherLoaders(config.module.rules).forEach(loader =>
     loader.options = Object.assign({}, loader.options, {
       sourceMap: shouldUseSourceMap,
     })
-  });
+  );
 
   return config;
 };

@@ -20,5 +20,5 @@ module.exports = compose(
   rewireCSSModules,
   rewireTypescript,
   rewireBabel,
-  convertStringLoadersToObjects
+  convertStringLoadersToObjects // should run before all, because some rewire scripts expect loaders in object format
 );

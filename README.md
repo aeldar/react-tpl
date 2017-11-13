@@ -24,8 +24,8 @@ Additions
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
 * [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
 * [ ] Runtime environment variables (as opposed to build time env vars through `process.env`)
-* [ ] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
-* [ ] add source maps for CSS development (fix it for css modules)
+* [x] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
+* [x] Source maps for CSS added always until `GENERATE_SOURCEMAP=false` env set.
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))
 * [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
 * [ ] Example code
