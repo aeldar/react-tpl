@@ -26,7 +26,7 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
     (rule, index) =>
       (result = ruleMatcher(rule)
         ? { index, rules }
-        : findIndexAndRules(ruleChildren(rule), ruleMatcher)),
+        : findIndexAndRules(ruleChildren(rule), ruleMatcher))
   );
   return result;
 };
