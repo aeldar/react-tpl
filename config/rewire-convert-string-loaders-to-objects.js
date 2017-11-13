@@ -1,20 +1,3 @@
-// const { getLoader } = require('react-app-rewired');
-
-// custom getLoader instead of react-ap-rewired's one, to implement proper loader search inside
-// ExtractTextPlugin.extract() plugin.
-// (Array.isArray(rule.loader) && rule.loader) added for this purpose.
-const getLoader = function(rules, matcher) {
-  let loader;
-
-  rules.some(rule => {
-    return loader = matcher(rule)
-      ? rule
-      : getLoader(rule.use || rule.oneOf || (Array.isArray(rule.loader) && rule.loader) || [], matcher);
-  });
-
-  return loader;
-};
-
 const ruleListPatcher = (rules) => {
   rules.forEach((rule, ind, arr) => {
     if (typeof rule === 'string') {

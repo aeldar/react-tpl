@@ -1,6 +1,7 @@
 /**
  * Based on https://github.com/lwd-technology/react-app-rewire-typescript
  */
+const { ruleChildren, createLoaderMatcher } = require('./helpers');
 
 const fs = require('fs');
 const path = require('path');
@@ -16,13 +17,6 @@ const TS_LOADER_OPTIONS_DEFAULTS = {
   transpileOnly: true,
 };
 
-/**
- * @param {Object} rule
- * @return {Array}
- */
-const ruleChildren = rule =>
-  rule.use || rule.oneOf || (Array.isArray(rule.loader) && rule.loader) || [];
-
 const findIndexAndRules = (rulesSource, ruleMatcher) => {
   let result;
   const rules = Array.isArray(rulesSource)
@@ -37,15 +31,6 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
   return result;
 };
 
-/**
- * Given a rule, return if it uses a specific loader.
- */
-const createLoaderMatcher = loader => rule =>
-  rule.loader && rule.loader.indexOf(`${path.sep}${loader}${path.sep}`) !== -1;
-
-/**
- * Get the existing file-loader config.
- */
 const fileLoaderMatcher = createLoaderMatcher('file-loader');
 
 /**
