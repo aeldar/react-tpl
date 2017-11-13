@@ -1,7 +1,7 @@
-@import "./variables.css";
-
 @import "~normalize.css";
 @import "~flexboxgrid";
+
+@import "./variables.css";
 
 html {
   box-sizing: border-box;
