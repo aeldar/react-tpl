@@ -1,27 +1,46 @@
-const { createLoaderMatcher } = require('./helpers');
+/*
+* 1. Find existed CSS rule.
+* 2. Create a CSSModules rule based on it (copy content by reference except for the css-loader!).
+* 3. Insert it before CSS rule.
+* */
 
-const cssLoaderMatcher = createLoaderMatcher('css-loader');
+const { ruleChildren } = require('./helpers');
 
-// hardcoded search
-const getCssRuleParent = (config, env) => config.module.rules[1];
-const getCssRule = (config, env) => getCssRuleParent(config, env).oneOf[2];
-const cssLoaderOptions = (oldOptions, env) => Object.assign({}, oldOptions, {
+const cssRuleMatcher = rule => rule.test && rule.test.toString() === /\.css$/.toString();
+
+// returns a triplet with parent rule, css rule, and index of css rule inside parent rule.
+const findCssRuleAndParentList = (rules) => {
+  return rules.reduce((acc, curr, ind) => {
+    if (acc.length) {
+      return acc;
+    }
+    if (cssRuleMatcher(curr)) {
+      return [rules, curr, ind];
+    }
+    return findCssRuleAndParentList(ruleChildren(curr));
+  }, []);
+};
+
+const withCssModulesOptions = (options, env) => Object.assign({}, options, {
   modules: true,
   localIdentName: 'production' === env ? '__[hash:base64:8]' : '[name]__[local]___[hash:base64:5]',
 });
-const getList = rule => rule.use || rule.loader;
 
 module.exports = function override(config, env) {
 
-  const getCssModuleRuleParent = {
+  const [parent, css, index] = findCssRuleAndParentList(config.module.rules);
+
+  const cssModulesRule = {
     test: /\.module\.css$/,
-    use: getList(getCssRule(config, env)).map(rule => (
-        rule.loader.indexOf('css-loader') !== -1 ? Object.assign({}, rule, { options: cssLoaderOptions(rule.options, env)}) : rule
+    use: ruleChildren(css).map(rule => (
+        rule.loader.indexOf('css-loader') !== -1
+          ? Object.assign({}, rule, { options: withCssModulesOptions(rule.options, env) })
+          : rule
       )
-    ),
+    )
   };
 
-  getCssRuleParent(config).oneOf.unshift(getCssModuleRuleParent);
+  parent.splice(index, 0, cssModulesRule);
 
   return config;
 };
