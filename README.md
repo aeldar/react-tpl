@@ -13,8 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Additions
 ---------
 
-* [ ] ~~[ESLint](https://eslint.org/)~~ TSLint
-  * [ ] set up cruel rules
+* [x] ~~[ESLint](https://eslint.org/)~~ TSLint
 * [ ] ~~[Flow](https://flow.org/en/docs/react/)~~ (damn slow; shitty IDE support)
 * [x] [TypeScript](https://www.typescriptlang.org/)
 * [x] [Styleguidist](https://react-styleguidist.js.org/)
