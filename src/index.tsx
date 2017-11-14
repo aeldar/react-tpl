@@ -6,7 +6,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const rootEl = document.getElementById('root');
-const renderApp = (Component) => {
+const renderApp = Component => {
   ReactDOM.render(<Component />, rootEl);
 };
 

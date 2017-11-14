@@ -39,6 +39,7 @@ Additions
 * [ ] GraphQL client
 * [x] [Material UI v1](https://material-ui-next.com/)
 * [x] [Normalize.css](https://necolas.github.io/normalize.css/)
+* [ ] Docker
 * [x] Babel plugins
   * [x] [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
 * [ ] Other dependencies

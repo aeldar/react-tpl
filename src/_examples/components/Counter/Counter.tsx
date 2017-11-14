@@ -23,7 +23,7 @@ export class Counter extends React.Component<{}, State> {
   }
 
   updateTimer = () => {
-    this.setState(({ secondsSinceReload }) => ({ secondsSinceReload: secondsSinceReload + 1}));
+    this.setState(({ secondsSinceReload }) => ({ secondsSinceReload: secondsSinceReload + 1 }));
   }
 
   render() {

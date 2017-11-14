@@ -11,4 +11,3 @@ declare module '*.css' {
 declare interface Window {
   readonly env?: { readonly [key: string]: number|string|boolean };
 }
-

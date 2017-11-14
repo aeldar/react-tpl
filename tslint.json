@@ -1,41 +1,45 @@
 {
-    "defaultSeverity": "warning",
-    "extends": [
-        "tslint:recommended",
-        "tslint-react"
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb",
+    "tslint-react"
+  ],
+  "jsRules": {},
+  "rules": {
+    "import-name": false,
+    "variable-name": false,
+    "ter-arrow-parens": [
+      true,
+      "as-needed"
     ],
-    "jsRules": {},
-    "rules": {
-        "ordered-imports": false,
-        "arrow-parens": false,
-        "interface-name": false,
-        "no-console": [
-          true,
-          "debug",
-          "info",
-          "time",
-          "timeEnd",
-          "trace"
-        ],
-        "member-access": false,
-        "indent": [
-          true,
-          "spaces"
-        ],
-        "jsx-boolean-value": false,
-        "jsx-no-lambda": false,
-        "jsx-no-multiline-js": false,
-        "max-line-length": [
-          true,
-          140
-        ],
-        "quotemark": [
-          true,
-          "single",
-          "jsx-double",
-          "avoid-escape"
-        ],
-        "no-trailing-whitespace": false
-    },
-    "rulesDirectory": []
+    "strict-boolean-expressions": false,
+    "ordered-imports": false,
+    "interface-name": false,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "member-access": false,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape"
+    ]
+  }
 }
