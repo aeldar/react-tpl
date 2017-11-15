@@ -24,7 +24,7 @@ Additions
 * [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
 * [ ] Runtime environment variables (as opposed to build time env vars through `process.env`), see [12 Factor Apps, config](https://12factor.net/config)
 * [x] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
-* [x] Source maps for CSS added always until `GENERATE_SOURCEMAP=false` env set.
+* [x] Source maps for CSS always enabled until `GENERATE_SOURCEMAP=false` env set.
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))
 * [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
 * [ ] [Redux](https://redux.js.org/), because there is nothing better than that
