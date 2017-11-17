@@ -21,26 +21,26 @@ Additions
 * [ ] ~~[Storybook](https://storybook.js.org/)~~
   * [ ] ~~[StoryShots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) [Jest Snapshot testing](https://storybook.js.org/testing/structural-testing/)~~
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
-* [ ] [RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063)
+* [ ] ~~[RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063), [howto](https://github.com/gaearon/react-hot-loader), [example](https://github.com/TypeStrong/ts-loader/tree/master/examples/react-hot-boilerplate).~~
 * [ ] Runtime environment variables (as opposed to build time env vars through `process.env`), see [12 Factor Apps, config](https://12factor.net/config)
 * [x] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
 * [x] Source maps for CSS always enabled until `GENERATE_SOURCEMAP=false` env set.
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))
 * [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
-* [ ] [Redux](https://redux.js.org/), because there is nothing better than that
-* [ ] [GraphQL](http://graphql.org/) client
+* [ ] ~~[Redux](https://redux.js.org/), because there is nothing better than that~~
+* [ ] ~~[GraphQL](http://graphql.org/) client~~
 * [x] [Material UI v1](https://material-ui-next.com/)
 * [x] [Normalize.css](https://necolas.github.io/normalize.css/)
 * [ ] [Docker](https://www.docker.com/)
 * [x] [Babel](https://babeljs.io/) [plugins](https://babeljs.io/docs/plugins/)
   * [x] [babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
-* [ ] Other dependencies
+* [x] Other dependencies
   * [x] [recompose](https://github.com/acdlite/recompose) - A React utility belt for function components and higher-order components.
   * [x] [classnames](https://github.com/JedWatson/classnames) - A simple javascript utility for conditionally joining classNames together.
-* [ ] Example code
+* [x] Example code
   * [x] Statefull component example
   * [x] Stateless component example
   * [x] MaterialUI example
-  * [ ] MaterialUI with theme
-  * [ ] Redux
-  * [ ] GraphQL
+  * [ ] ~~MaterialUI with theme~~
+  * [ ] ~~Redux~~
+  * [ ] ~~GraphQL~~
