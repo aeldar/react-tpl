@@ -10,6 +10,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const FORK_TS_CHECKER_PLUGIN_OPTIONS = {
   tslint: true,
+  watch: ['./src'] // optional but improves performance (less stat calls)
 };
 
 const TS_LOADER_OPTIONS_DEFAULTS = {
