@@ -26,7 +26,7 @@ Additions
 * [x] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
 * [x] Source maps for CSS always enabled until `GENERATE_SOURCEMAP=false` env set.
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))
-* [ ] [browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)
+* [ ] ~~[browserhistory](https://github.com/ai/browserslist) for postcss (cssnext, autoprefixer et c.)~~ Awaiting PR [here](https://github.com/facebookincubator/create-react-app/pull/2358)
 * [ ] ~~[Redux](https://redux.js.org/), because there is nothing better than that~~
 * [ ] ~~[GraphQL](http://graphql.org/) client~~
 * [x] [Material UI v1](https://material-ui-next.com/)
