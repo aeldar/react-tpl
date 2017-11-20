@@ -22,7 +22,7 @@ Additions
   * [ ] ~~[StoryShots](https://github.com/storybooks/storybook/tree/master/addons/storyshots) [Jest Snapshot testing](https://storybook.js.org/testing/structural-testing/)~~
 * [x] [HMR](https://github.com/facebookincubator/create-react-app/issues/2317) (Hot Module Reload)
 * [ ] ~~[RHL](http://gaearon.github.io/react-hot-loader/) (React Hot Reload), [differences](https://github.com/facebookincubator/create-react-app/issues/1063), [howto](https://github.com/gaearon/react-hot-loader), [example](https://github.com/TypeStrong/ts-loader/tree/master/examples/react-hot-boilerplate).~~
-* [ ] Runtime environment variables (as opposed to build time env vars through `process.env`), see [12 Factor Apps, config](https://12factor.net/config)
+* [ ] ~~Runtime environment variables (as opposed to build time env vars through `process.env`)~~, see [12 Factor Apps, config](https://12factor.net/config), working example [here](https://github.com/ctco-dev/react-template)
 * [x] [CSS Modules](https://github.com/css-modules/css-modules) - for `*.module.css` CSS files.
 * [x] Source maps for CSS always enabled until `GENERATE_SOURCEMAP=false` env set.
 * [x] ~~[CSSNext](http://cssnext.io/)~~ (see branch [feature/cssnext](https://github.com/aeldar/react-tpl/tree/feature/cssnext))

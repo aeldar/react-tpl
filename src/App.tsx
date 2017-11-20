@@ -8,7 +8,6 @@ import theme from './theme';
 
 import Counter from './_examples/components/Counter/Counter';
 import Greeter from './_examples/components/Greeter/Greeter';
-import ServEnvVarExample from './_examples/components/ServEnvVarExample/ServEnvVarExample';
 import MaterialHello from './_examples/components/MaterialHello/MaterialHello';
 
 class App extends Component {
@@ -36,7 +35,6 @@ class App extends Component {
           {this.renderIntro()}
           <Greeter greeting={'Hello'} />
           <Counter />
-          <ServEnvVarExample />
           <MaterialHello />
         </div>
       </MuiThemeProvider>
