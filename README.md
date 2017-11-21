@@ -9,7 +9,7 @@ React Tpl
 [![Greenkeeper badge](https://badges.greenkeeper.io/aeldar/react-tpl.svg)](https://greenkeeper.io/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), without ejecting!
-[react-app-rewired](https://github.com/timarney/react-app-rewired) was used to patch CRA _webpack/babel/other staff_ configuration.
+[react-app-rewired](https://github.com/timarney/react-app-rewired) was used to patch CRA _webpack/babel/other stuff_ configuration.
 
 Additions
 ---------
