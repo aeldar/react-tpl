@@ -6,12 +6,12 @@
  */
 
 const { compose } = require('react-app-rewired');
-const rewireCSSModules = require('./config/rewire-css-modules');
-const rewireTypescript = require('./config/rewire-typescript');
-const rewireBabel = require('./config/rewire-babel');
-const rewireCssSourcemaps = require('./config/rewire-css-sourcemaps');
-const convertStringLoadersToObjects = require('./config/rewire-convert-string-loaders-to-objects');
-// const debugRules = require('./config/rewire-debug-print-rules');
+const rewireCSSModules = require('./tools/rewire-scripts/rewire-css-modules');
+const rewireTypescript = require('./tools/rewire-scripts/rewire-typescript');
+const rewireBabel = require('./tools/rewire-scripts/rewire-babel');
+const rewireCssSourcemaps = require('./tools/rewire-scripts/rewire-css-sourcemaps');
+const convertStringLoadersToObjects = require('./tools/rewire-scripts/rewire-convert-string-loaders-to-objects');
+// const debugRules = require('./tools/rewire-scripts/rewire-debug-print-rules');
 
 module.exports = compose(
   // debugRules, // print rules and kill
