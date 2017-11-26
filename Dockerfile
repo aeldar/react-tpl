@@ -24,7 +24,7 @@ RUN mkdir -p /opt/app
 COPY --from=build /usr/src/app/build /opt/app
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-COPY ./tools/nginx/sire.conf /etc/nginx/conf.d/default.conf
+COPY ./tools/nginx/site.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
