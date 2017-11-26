@@ -1,0 +1,11 @@
+.idea/*
+.git/*
+.circleci/*
+build/*
+coverage/*
+node_modules/*
+reports/*
+.*
+Dockerfile
+LICENSE
+README.md
