@@ -35,7 +35,7 @@
     "react-docgen-typescript": "1.1.0",
     "react-scripts": "1.0.17",
     "react-styleguidist": "6.0.33",
-    "ts-jest": "21.2.3",
+    "ts-jest": "21.2.4",
     "ts-loader": "3.1.1",
     "tslint": "5.8.0",
     "tslint-config-airbnb": "5.4.2",
