@@ -6,6 +6,10 @@
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.3.tgz#3f0ff6873da793870e20a260cada55982f38a9e5"
 
+"@types/events@*":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/events/-/events-1.1.0.tgz#93b1be91f63c184450385272c47b6496fd028e02"
+
 "@types/jest@21.1.8":
   version "21.1.8"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.8.tgz#d497213725684f1e5a37900b17a47c9c018f1a97"
@@ -14,9 +18,11 @@
   version "8.0.51"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.51.tgz#b31d716fb8d58eeb95c068a039b9b6292817d5fb"
 
-"@types/node@8.0.53":
-  version "8.0.53"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.53.tgz#396b35af826fa66aad472c8cb7b8d5e277f4e6d8"
+"@types/node@8.0.54":
+  version "8.0.54"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.54.tgz#3fd9357db4af388b79e03845340259440edffde6"
+  dependencies:
+    "@types/events" "*"
 
 "@types/react-dom@16.0.3":
   version "16.0.3"
@@ -6120,9 +6126,9 @@ react-docgen@^3.0.0-beta8:
     node-dir "^0.1.10"
     recast "^0.12.6"
 
-react-dom@16.1.1:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.1.1.tgz#b2e331b6d752faf1a2d31399969399a41d8d45f8"
+react-dom@16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -6300,9 +6306,9 @@ react-transition-group@^2.2.1:
     prop-types "^15.5.8"
     warning "^3.0.0"
 
-react@16.1.1:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.1.1.tgz#d5c4ef795507e3012282dd51261ff9c0e824fe1f"
+react@16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -7411,9 +7417,9 @@ tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
 
-ts-jest@21.2.3:
-  version "21.2.3"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-21.2.3.tgz#d90cd143c433e8dfd9b8df54921c7f3f1d8b9819"
+ts-jest@21.2.4:
+  version "21.2.4"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-21.2.4.tgz#8fbcfbfbf0c58cced10dcc34a5190acc8c5312ef"
   dependencies:
     babel-core "^6.24.1"
     babel-plugin-istanbul "^4.1.4"
@@ -7422,14 +7428,13 @@ ts-jest@21.2.3:
     cpx "^1.5.0"
     fs-extra "^4.0.2"
     jest-config "^21.2.1"
-    jest-util "^21.2.1"
     pkg-dir "^2.0.0"
     source-map-support "^0.5.0"
     yargs "^10.0.3"
 
-ts-loader@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-3.1.1.tgz#602d93c12029eaf8fa1ee478a90785d40c5f6658"
+ts-loader@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-3.2.0.tgz#23211922179b81f7448754b7fdfca45b8374a15a"
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^3.0.0"
@@ -7536,9 +7541,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.1.tgz#ef39cdea27abac0b500242d6726ab90e0c846631"
+typescript@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"
