@@ -24,8 +24,10 @@ RUN mkdir -p /opt/app
 COPY --from=build /usr/src/app/build /opt/app
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-COPY ./tools/nginx/site.conf /etc/nginx/conf.d/default.conf
+COPY ./tools/nginx /tmp
 
 EXPOSE 80
 
-CMD ["nginx"]
+RUN chmod a+x /tmp/nginx/start.sh
+
+CMD ["/tmp/nginx/start.sh"]

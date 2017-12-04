@@ -12,4 +12,6 @@ ENV_JSON=$(sh ./env-to-json.sh $MASK | sed 's/\\/\\\\\\\\/g' | sed "s/'/\\\\\\\\
 
 echo $ENV_JSON
 
-cat ./site.tpl.conf | sed "s/$MARKER/${ENV_JSON}/" > ./site.conf
+cat ./site.tpl.conf | sed "s/$MARKER/${ENV_JSON}/" > /etc/nginx/conf.d/default.conf
+
+nginx -g 'daemon off;'
