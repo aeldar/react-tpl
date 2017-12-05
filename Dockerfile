@@ -23,7 +23,6 @@ FROM nginx:alpine AS run
 RUN mkdir -p /opt/app
 COPY --from=build /usr/src/app/build /opt/app
 
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 COPY ./tools/nginx /tmp
 
 EXPOSE 80
