@@ -29,9 +29,9 @@
   version "16.0.29"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.29.tgz#4eea6a8de9f40ca71d580ae7a9f3b4b77b368de8"
 
-"@types/recompose@0.24.3":
-  version "0.24.3"
-  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.24.3.tgz#c2c1063bcea9d670052b886f47b5ce42faba0cf2"
+"@types/recompose@0.24.4":
+  version "0.24.4"
+  resolved "https://registry.yarnpkg.com/@types/recompose/-/recompose-0.24.4.tgz#39de3048382d39f0808a1780d3aa2fdb839986cd"
   dependencies:
     "@types/react" "*"
 
