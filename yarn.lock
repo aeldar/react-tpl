@@ -10,11 +10,7 @@
   version "21.1.8"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.8.tgz#d497213725684f1e5a37900b17a47c9c018f1a97"
 
-"@types/node@*":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.0.tgz#c5be22ffc84b221466fc8dfc0d6b1f88060808ef"
-
-"@types/node@8.5.1":
+"@types/node@*", "@types/node@8.5.1":
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.1.tgz#4ec3020bcdfe2abffeef9ba3fbf26fca097514b5"
 
@@ -25,11 +21,7 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react@*":
-  version "16.0.29"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.29.tgz#4eea6a8de9f40ca71d580ae7a9f3b4b77b368de8"
-
-"@types/react@16.0.31":
+"@types/react@*", "@types/react@16.0.31":
   version "16.0.31"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.31.tgz#5285da62f3ac62b797f6d0729a1d6181f3180c3e"
 
@@ -106,8 +98,8 @@ ajv@^4.9.1:
     json-stable-stringify "^1.0.1"
 
 ajv@^5.0.0, ajv@^5.1.0, ajv@^5.1.5, ajv@^5.2.0, ajv@^5.2.3:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.1.tgz#b38bb8876d9e86bee994956a04e721e88b248eb2"
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
   dependencies:
     co "^4.6.0"
     fast-deep-equal "^1.0.0"
@@ -3790,12 +3782,6 @@ is-obj@^1.0.0, is-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
 
-is-observable@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/is-observable/-/is-observable-0.2.0.tgz#b361311d83c6e5d726cabf5e250b0237106f5ae2"
-  dependencies:
-    symbol-observable "^0.2.2"
-
 is-path-cwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-path-cwd/-/is-path-cwd-1.0.0.tgz#d225ec23132e89edd38fda767472e62e65f1106d"
@@ -4474,10 +4460,8 @@ jss-default-unit@^7.0.0:
   resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-7.0.0.tgz#176c1db91da870e3ad16301f6f4b4cfc6fe1e90a"
 
 jss-default-unit@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-8.0.0.tgz#a308ead4f587ebe17cc845f9870867400de90910"
-  dependencies:
-    is-observable "^0.2.0"
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/jss-default-unit/-/jss-default-unit-8.0.1.tgz#be3dc682b871d1a77ab7e2d0a1e66f9fc2d5a4ca"
 
 jss-expand@^4.0.0:
   version "4.0.1"
@@ -4547,11 +4531,11 @@ jss@^8.1.0:
     warning "^3.0.0"
 
 jss@^9.3.3:
-  version "9.3.3"
-  resolved "https://registry.yarnpkg.com/jss/-/jss-9.3.3.tgz#d535ad8c64f6df9aeadb0219d5153c47493ff1c0"
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/jss/-/jss-9.4.0.tgz#fbfd1a63556c5afd5bfcffd98df3c50eb2614ed3"
   dependencies:
     is-in-browser "^1.1.3"
-    symbol-observable "^1.0.4"
+    symbol-observable "^1.1.0"
     warning "^3.0.0"
 
 jsx-ast-utils@^1.4.0:
@@ -4817,8 +4801,8 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
 
 markdown-to-jsx@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.2.2.tgz#3335452338b73b242fc1b1c359218d9b8b59a501"
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.3.0.tgz#5588bfeb6ed389a55869a3e225b014f495c9bf7f"
   dependencies:
     prop-types "^15.5.10"
     unquote "^1.1.0"
@@ -7278,11 +7262,7 @@ sw-toolbox@^3.4.0:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
 
-symbol-observable@^0.2.2:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-0.2.4.tgz#95a83db26186d6af7e7a18dbd9760a2f86d08f40"
-
-symbol-observable@^1.0.4:
+symbol-observable@^1.0.4, symbol-observable@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.1.0.tgz#5c68fd8d54115d9dfb72a84720549222e8db9b32"
 
@@ -7469,7 +7449,7 @@ ts-loader@3.2.0:
     loader-utils "^1.0.2"
     semver "^5.0.1"
 
-tslib@^1.0.0, tslib@^1.7.1:
+tslib@^1.0.0, tslib@^1.7.1, tslib@^1.8.0:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.1.tgz#6946af2d1d651a7b1863b531d6e5afa41aa44eac"
 
@@ -7529,10 +7509,10 @@ tsutils@^1.4.0:
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-1.9.1.tgz#b9f9ab44e55af9681831d5f28d0aeeaf5c750cb0"
 
 tsutils@^2.12.1, tsutils@^2.12.2, tsutils@^2.8.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.13.0.tgz#0f52b6aabbc4216e72796b66db028c6cf173e144"
+  version "2.13.1"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.13.1.tgz#d6d1cc0f7c04cf9fb3b28a292973cffb9cfbe09a"
   dependencies:
-    tslib "^1.7.1"
+    tslib "^1.8.0"
 
 tty-browserify@0.0.0:
   version "0.0.0"
