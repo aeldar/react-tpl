@@ -44,3 +44,4 @@ Additions
   * [ ] ~~MaterialUI with theme~~
   * [ ] ~~Redux~~
   * [ ] ~~GraphQL~~
+
