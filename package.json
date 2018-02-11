@@ -34,7 +34,7 @@
     "react-app-rewired": "1.4.1",
     "react-docgen-typescript": "1.1.0",
     "react-scripts": "1.0.17",
-    "react-styleguidist": "6.1.0",
+    "react-styleguidist": "6.2.0",
     "ts-loader": "3.2.0",
     "ts-jest": "22.0.0",
     "tslint": "5.8.0",
