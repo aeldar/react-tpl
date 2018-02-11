@@ -1633,6 +1633,14 @@ cliui@^3.2.0:
     strip-ansi "^3.0.1"
     wrap-ansi "^2.0.0"
 
+cliui@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-4.0.0.tgz#743d4650e05f36d1ed2575b59638d87322bfbbcc"
+  dependencies:
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
+    wrap-ansi "^2.0.0"
+
 clone@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.3.tgz#298d7e2231660f40c003c2ed3140decf3f53085f"
@@ -8009,9 +8017,9 @@ trough@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.1.tgz#a9fd8b0394b0ae8fff82e0633a0a36ccad5b5f86"
 
-ts-jest@22.0.0:
-  version "22.0.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-22.0.0.tgz#cce1a5f1106150ca002d09f7e85913355ceb5e8d"
+ts-jest@22.0.4:
+  version "22.0.4"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-22.0.4.tgz#be5e8d7d2cf3f3ef97d877a6a0562508c3f64515"
   dependencies:
     babel-core "^6.24.1"
     babel-plugin-istanbul "^4.1.4"
@@ -8022,7 +8030,7 @@ ts-jest@22.0.0:
     jest-config "^22.0.1"
     pkg-dir "^2.0.0"
     source-map-support "^0.5.0"
-    yargs "^10.0.3"
+    yargs "^11.0.0"
 
 ts-loader@3.3.1:
   version "3.3.1"
@@ -8785,17 +8793,17 @@ yargs-parser@^7.0.0:
   dependencies:
     camelcase "^4.1.0"
 
-yargs-parser@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-8.0.0.tgz#21d476330e5a82279a4b881345bf066102e219c6"
+yargs-parser@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-9.0.2.tgz#9ccf6a43460fe4ed40a9bb68f48d43b8a68cc077"
   dependencies:
     camelcase "^4.1.0"
 
-yargs@^10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-10.0.3.tgz#6542debd9080ad517ec5048fb454efe9e4d4aaae"
+yargs@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.0.0.tgz#c052931006c5eee74610e5fc0354bedfd08a201b"
   dependencies:
-    cliui "^3.2.0"
+    cliui "^4.0.0"
     decamelize "^1.1.1"
     find-up "^2.1.0"
     get-caller-file "^1.0.1"
@@ -8806,7 +8814,7 @@ yargs@^10.0.3:
     string-width "^2.0.0"
     which-module "^2.0.0"
     y18n "^3.2.1"
-    yargs-parser "^8.0.0"
+    yargs-parser "^9.0.2"
 
 yargs@^6.6.0:
   version "6.6.0"
