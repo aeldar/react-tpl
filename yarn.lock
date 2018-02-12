@@ -8206,9 +8206,9 @@ tslint-microsoft-contrib@~5.0.1:
   dependencies:
     tsutils "^2.12.1"
 
-tslint-react@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.4.0.tgz#12ed3fc7063f3df988370206736b50acbce07e59"
+tslint-react@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-3.5.0.tgz#88c13ed92bb6ac14596bdec6767b9be97ced2d3b"
   dependencies:
     tsutils "^2.13.1"
 
