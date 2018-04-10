@@ -6691,9 +6691,9 @@ react-docgen-displayname-handler@^1.0.1:
   dependencies:
     recast "0.12.6"
 
-react-docgen-typescript@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.2.3.tgz#2801a69b7338eb93d732f77c7a5dfabada6a44bd"
+react-docgen-typescript@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.2.6.tgz#d1140c58ee9bfff5481320b9ebd1d0659ecf9913"
 
 react-docgen@^3.0.0-beta9:
   version "3.0.0-beta9"
