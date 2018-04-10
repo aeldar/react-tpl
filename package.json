@@ -16,7 +16,7 @@
   "dependencies": {
     "classnames": "2.2.5",
     "material-ui": "1.0.0-beta.20",
-    "material-ui-icons": "1.0.0-beta.17",
+    "material-ui-icons": "1.0.0-beta.36",
     "normalize.css": "8.0.0",
     "react": "16.3.1",
     "react-dom": "16.3.1",
