@@ -28,7 +28,7 @@
     "@types/node": "9.4.5",
     "@types/react": "16.0.36",
     "@types/react-dom": "16.0.3",
-    "@types/recompose": "0.24.5",
+    "@types/recompose": "0.24.7",
     "babel-plugin-lodash": "3.3.2",
     "fork-ts-checker-webpack-plugin": "0.4.1",
     "react-app-rewired": "1.5.0",
