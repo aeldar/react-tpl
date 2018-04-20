@@ -7,7 +7,8 @@
 
 const { compose } = require('react-app-rewired');
 const rewireCSSModules = require('./tools/rewire-scripts/rewire-css-modules');
-const rewireTypescript = require('./tools/rewire-scripts/rewire-typescript');
+// const rewireTypescript = require('./tools/rewire-scripts/rewire-typescript');
+const rewireTypescript = require('react-app-rewire-typescript');
 const rewireBabel = require('./tools/rewire-scripts/rewire-babel');
 const rewireCssSourcemaps = require('./tools/rewire-scripts/rewire-css-sourcemaps');
 const convertStringLoadersToObjects = require('./tools/rewire-scripts/rewire-convert-string-loaders-to-objects');

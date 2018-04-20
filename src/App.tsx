@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import logo from './logo.svg';
@@ -10,7 +10,7 @@ import Counter from './_examples/components/Counter/Counter';
 import Greeter from './_examples/components/Greeter/Greeter';
 import MaterialHello from './_examples/components/MaterialHello/MaterialHello';
 
-class App extends Component {
+class App extends React.Component {
 
   renderHeader = () => (
     <header className={styles.header}>
