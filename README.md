@@ -11,6 +11,8 @@ React Tpl
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), without ejecting!
 [react-app-rewired](https://github.com/timarney/react-app-rewired) was used to patch CRA _webpack/babel/other stuff_ configuration.
 
+**Zombie repo, DON'T use!!!**
+
 Additions
 ---------
 
