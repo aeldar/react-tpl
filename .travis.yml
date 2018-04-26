@@ -4,6 +4,7 @@ after_success:
 node_js:
   - "8"
   - "9"
+  - "10"
 
 before_install:
   # - npm install -g npm # update to the latest npm to enable lock file usage
