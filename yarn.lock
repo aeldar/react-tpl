@@ -6910,9 +6910,9 @@ react-scrollbar-size@^2.0.2:
     react-event-listener "^0.5.1"
     stifle "^1.0.2"
 
-react-styleguidist@7.0.8:
-  version "7.0.8"
-  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-7.0.8.tgz#03d51b69bf1913b92ebe46153fda1268ed1c7d21"
+react-styleguidist@7.0.10:
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-7.0.10.tgz#aaf38f14c5d0a12bc3026e4d7f70fc18d9c86049"
   dependencies:
     "@vxna/mini-html-webpack-template" "^0.1.6"
     acorn "^5.5.3"
