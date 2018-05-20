@@ -20,7 +20,7 @@
     "normalize.css": "8.0.0",
     "react": "16.3.2",
     "react-dom": "16.3.2",
-    "recompose": "0.27.0"
+    "recompose": "0.27.1"
   },
   "devDependencies": {
     "@types/classnames": "2.2.3",
